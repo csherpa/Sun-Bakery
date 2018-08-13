@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+</head>
+<body bgcolor="pink">
+  <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Sun Bakery</a>
+        <ul class="right hide-on-med-and-down">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/cookies">Cookies</a></li>
+        <li><a href="/cakes">Cakes</a></li>
+        <li><a href="/muffins">Muffins</a></li>
+        </ul>
+    </div>
+    </nav>
+    </div>
+
+  <section>
+  <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://data.thefeedfeed.com/recommended/post_6361029.jpeg">           
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$edible_flower[0].name %></span>
+            <ul>
+              <li><%=$edible_flower[0].price%></li>
+              <li><%=$edible_flower[0].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/12/chocolate-turtle-cookies-3.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$turtle_cookie[1].name%></span>
+            <ul>
+              <li><%=$turtle_cookie[1].price%></li>
+              <li><%=$turtle_cookie[1].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="http://chocolatewithgrace.com/wp-content/uploads/2016/10/Caramel-Stuffed-Double-Chocolate-Chip-Cookies-7.jpg">   
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$caramel_stuffed[2].name%></span>
+            <ul>
+              <li><%=$caramel_stuffed[2].price%></li>
+              <li><%=$caramel_stuffed[2].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>      

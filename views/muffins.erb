@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+</head>
+<body bgcolor="pink">
+  <div>
+  <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Sun Bakery</a>
+        <ul class="right hide-on-med-and-down">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/cookies">Cookies</a></li>
+        <li><a href="/cakes">Cakes</a></li>
+        <li><a href="/muffins">Muffins</a></li>
+        </ul>
+    </div>
+    </nav>
+    </div>
+    
+  <section>
+  <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://bakerbynature.com/wp-content/uploads/2018/03/BlueberryLemonPoppySeedMuffins123-1-of-1.jpg">            
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$lemon_blueberry[0].name%></span>
+            <ul>
+              <li><%=$lemon_blueberry[0].price%></li>
+              <li><%=$lemon_blueberry[0].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="http://anniesnoms.com/wp-content/uploads/2016/02/coffee-crumb-muffins-3.jpg">           
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$coffee_crumb[1].name%></span>
+            <ul>
+              <li><%=$coffee_crumb[1].price%></li>
+              <li><%=$coffee_crumb[1].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i2.wp.com/www.antoskitchen.com/wp-content/uploads/2017/01/quinoa-muffins.jpg?resize=1100%2C681&ssl=1">
+            
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$quinoa_muffin[2].name%></span>
+            <ul>
+              <li><%=$quinoa_muffin[2].price%></li>
+              <li><%=$quinoa_muffin[2].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>         

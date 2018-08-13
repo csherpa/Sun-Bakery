@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+<body bgcolor="pink">
+  <div class="navbar-fixed">
+    <nav>
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Sun Bakery</a>
+        <ul class="right hide-on-med-and-down">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/cookies">Cookies</a></li>
+        <li><a href="/cakes">Cakes</a></li>
+        <li><a href="/muffins">Muffins</a></li>
+        </ul>
+    </div>
+    </nav>
+    </div>
+
+  <section >
+  <div class="row">
+      <div class="col 13 m3 s12">
+        <div class="card" >
+          <div class="card-image">
+            <img src="https://i2.wp.com/bakingamoment.com/wp-content/uploads/2017/07/IMG_3926-black-forest-cake-square.jpg?resize=720%2C720&ssl=1">
+            
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$black_forest[0].name%></span>
+            <ul>
+
+              <li><%=$black_forest[0].price%></li>
+              <li><%=$black_forest[0].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col 13 m3 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="http://ironchefshellie.com/wp-content/uploads/2016/01/Japanese-Cheesecake_1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$cheese_cake[1].name%></span>
+            <ul>
+              <li><%=$cheese_cake[1].price%></li>
+              <li><%=$cheese_cake[1].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col 13 m3 s12">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i1.wp.com/www.alsothecrumbsplease.com/wp-content/uploads/2018/05/Tiramisu-Cake-Recipe-4.jpg?fit=1800%2C2700&ssl=1">           
+          </div>
+          <div class="card-content">
+            <span class="card-title"><%=$tiramisu_cake[2].name%></span>
+            <ul>
+              <li><%=$tiramisu_cake[2].price%></li>
+              <li><%=$tiramisu_cake[2].description%></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>        
